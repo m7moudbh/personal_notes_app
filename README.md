@@ -84,7 +84,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/m7moudbh/mnote_app.git
+git clone https://github.com/m7moudbh/personal_notes_app.git
 cd mnote_app
 ```
 
@@ -266,7 +266,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help:
 - 📧 Email: [mahmoudebanihani@gmail.com]
-- 🐛 Issues: [GitHub Issues](https://github.com/m7moudbh/mnote_app/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/m7moudbh/personal_notes_app/issues)
 
 ---
 
