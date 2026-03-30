@@ -297,7 +297,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> with AutomaticKeepA
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.of(dialogContext).pop(false); // ← إرجاع false
+                Navigator.of(dialogContext).pop(false);
               },
               child: Text(tr(context, 'cancel')),
             ),

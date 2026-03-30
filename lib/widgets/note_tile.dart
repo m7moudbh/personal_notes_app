@@ -9,24 +9,26 @@ class NoteTile extends StatelessWidget {
   final Note note;
   final VoidCallback onTap;
   final VoidCallback? onLongPress;
-  final VoidCallback onDelete;
+  final VoidCallback? onDelete;
   final VoidCallback? onFavoriteToggle;
   final bool isSelected;
   final bool isSelectionMode;
   final bool showRemoveFromCategory;
   final VoidCallback? onRemoveFromCategory;
+  final bool showDelete;
 
   const NoteTile({
     super.key,
     required this.note,
     required this.onTap,
     this.onLongPress,
-    required this.onDelete,
+    this.onDelete,
     this.onFavoriteToggle,
     this.isSelected = false,
     this.isSelectionMode = false,
     this.showRemoveFromCategory = false,
     this.onRemoveFromCategory,
+    this.showDelete = true,
   });
 
   Color parseColor(String colorString) {
@@ -97,12 +99,10 @@ class NoteTile extends StatelessWidget {
                     const SizedBox(width: 12),
                   ],
 
-
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-
                         Text(
                           note.title,
                           style: TextStyle(
@@ -114,7 +114,6 @@ class NoteTile extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                         ),
                         const SizedBox(height: 8),
-
 
                         Text(
                           note.content,
@@ -130,9 +129,7 @@ class NoteTile extends StatelessWidget {
                     ),
                   ),
 
-
                   if (!isSelectionMode) ...[
-
                     if (onFavoriteToggle != null)
                       IconButton(
                         icon: Icon(
@@ -142,9 +139,10 @@ class NoteTile extends StatelessWidget {
                               : Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
                         ),
                         onPressed: onFavoriteToggle,
-                        tooltip: note.isFavorite ? 'إزالة من المفضلة' : 'إضافة للمفضلة',
+                        tooltip: note.isFavorite
+                            ? AppLocalizations.of(context)!.translate('removed_from_favorites')
+                            : AppLocalizations.of(context)!.translate('added_to_favorites'),
                       ),
-
                     PopupMenuButton<String>(
                       icon: const Icon(Icons.more_vert),
                       shape: RoundedRectangleBorder(
@@ -153,8 +151,8 @@ class NoteTile extends StatelessWidget {
                       onSelected: (value) {
                         if (value == 'remove' && onRemoveFromCategory != null) {
                           onRemoveFromCategory!();
-                        } else if (value == 'delete') {
-                          onDelete();
+                        } else if (value == 'delete' && onDelete != null) {
+                          onDelete!();
                         }
                       },
                       itemBuilder: (context) => [
@@ -168,23 +166,24 @@ class NoteTile extends StatelessWidget {
                                   color: Theme.of(context).colorScheme.primary,
                                 ),
                                 const SizedBox(width: 12),
-                                const Text('إزالة من المجموعة'),
+                                Text(AppLocalizations.of(context)!.translate('remove_from_category')),
                               ],
                             ),
                           ),
-                        PopupMenuItem(
-                          value: 'delete',
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.delete_outline,
-                                color: Theme.of(context).colorScheme.error,
-                              ),
-                              const SizedBox(width: 12),
-                              const Text('حذف'),
-                            ],
+                        if (showDelete && onDelete != null)
+                          PopupMenuItem(
+                            value: 'delete',
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.delete_outline,
+                                  color: Theme.of(context).colorScheme.error,
+                                ),
+                                const SizedBox(width: 12),
+                                Text(AppLocalizations.of(context)!.translate('delete')),
+                              ],
+                            ),
                           ),
-                        ),
                       ],
                     ),
                   ],
@@ -192,7 +191,6 @@ class NoteTile extends StatelessWidget {
               ),
 
               const SizedBox(height: 12),
-
 
               Row(
                 children: [
@@ -210,7 +208,6 @@ class NoteTile extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-
                   if (note.categoryId != null) ...[
                     const SizedBox(width: 12),
                     FutureBuilder<Category?>(

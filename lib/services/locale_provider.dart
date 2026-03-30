@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class LocaleProvider extends ChangeNotifier {
   static const String _localeKey = 'locale';
-  Locale _locale = const Locale('ar'); // اللغة الافتراضية
+  Locale _locale = const Locale('ar');
 
   LocaleProvider() {
     _loadLocale();

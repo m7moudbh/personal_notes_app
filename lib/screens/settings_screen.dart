@@ -29,7 +29,6 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(AppConstants.paddingMedium),
         children: [
-          // Theme Section
           _buildSectionHeader(
             context,
             tr(context, 'theme'),
@@ -63,7 +62,6 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
-          // Language Section
           _buildSectionHeader(
             context,
             tr(context, 'language'),
@@ -93,7 +91,6 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
-          // App Color Section
           _buildSectionHeader(
             context,
             localeProvider.isArabic ? 'لون التطبيق' : 'App Color',
@@ -170,7 +167,6 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
-          // About Section
           _buildSectionHeader(
             context,
             tr(context, 'about'),
@@ -252,7 +248,6 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 24),
 
-          // Features Card
           Card(
             color: Theme.of(context).colorScheme.primaryContainer,
             child: Padding(

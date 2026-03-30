@@ -13,11 +13,11 @@ class AppLocalizations {
 
   static final Map<String, Map<String, String>> _localizedValues = {
     'en': {
-      // App Info
+      //App Info
       'app_name': 'MNote',
       'app_description': 'Save your thoughts and notes securely and easily',
 
-      // Home Screen
+      //Home Screen
       'my_notes': 'My Notes',
       'no_notes': 'No notes',
       'no_notes_desc': 'Start by adding your first note',
@@ -28,7 +28,7 @@ class AppLocalizations {
       'categories': 'Categories',
       'favorites': 'Favorites',
 
-      // Add/Edit Screen
+      //Add/Edit Screen
       'edit_note': 'Edit Note',
       'title': 'Title',
       'enter_title': 'Enter title',
@@ -42,7 +42,7 @@ class AppLocalizations {
       'content_required': 'Please enter note content',
       'content_min_length': 'Content must be at least 3 characters',
 
-      // Actions
+      //Actions
       'cancel': 'Cancel',
       'delete': 'Delete',
       'delete_title': 'Delete Note',
@@ -54,13 +54,13 @@ class AppLocalizations {
       'note_saved': 'Note saved successfully',
       'note_updated': 'Note updated successfully',
 
-      // Selection
+      //Selection
       'select_all': 'Select All',
       'selection_count': 'selected',
       'delete_selected': 'Delete Selected',
       'close_selection': 'Cancel',
 
-      // Settings
+      //Settings
       'settings': 'Settings',
       'theme': 'Theme',
       'dark_mode': 'Dark Mode',
@@ -73,7 +73,7 @@ class AppLocalizations {
       'version': 'Version',
       'features': 'Features',
 
-      // Features List (6 Simple Features)
+      //Features List (6 Simple Features)
       'feature_1': 'Save your ideas quickly',
       'feature_2': 'Organize them in colored groups',
       'feature_3': 'Star the important ones',
@@ -81,16 +81,16 @@ class AppLocalizations {
       'feature_5': 'Use it day or night',
       'feature_6': 'In Arabic or English',
 
-      // Menu
+      //Menu
       'more': 'More',
 
-      // Tooltips
+      //Tooltips
       'tooltip_search': 'Search',
       'tooltip_select_all': 'Select All',
       'tooltip_delete': 'Delete',
       'tooltip_cancel': 'Cancel',
 
-      // Categories
+      //Categories
       'no_categories': 'No categories',
       'no_categories_desc': 'Create your first category',
       'add_category': 'Add Category',
@@ -112,32 +112,33 @@ class AppLocalizations {
       'no_notes_to_add': 'All notes are already in this category',
       'notes_added_to_category': 'Notes added:',
       'note_removed_from_category': 'Note removed from category',
+      'remove_from_category': 'Remove from category',
       'no_notes_in_category': 'No notes in this category',
       'tap_to_add_notes': 'Tap + to add existing notes',
 
-      // Default Categories
+      //Default Categories
       'category_work': 'Work',
       'category_study': 'Study',
       'category_personal': 'Personal',
       'category_ideas': 'Ideas',
 
-      // Favorites
+      //Favorites
       'no_favorites': 'No favorites',
       'no_favorites_desc': 'Star your important notes',
       'removed_from_favorites': 'Removed from favorites',
       'added_to_favorites': 'Added to favorites',
 
-      // General
+      //General
       'add': 'Add',
       'error': 'Error',
       'press_again_to_exit': 'Press back again to exit',
     },
     'ar': {
-      // معلومات التطبيق
+
       'app_name': 'MNote',
       'app_description': 'احفظ أفكارك وملاحظاتك بأمان وسهولة',
 
-      // الشاشة الرئيسية
+
       'my_notes': 'ملاحظاتي',
       'no_notes': 'لا توجد ملاحظات',
       'no_notes_desc': 'ابدأ بإضافة أول ملاحظة لك',
@@ -148,7 +149,7 @@ class AppLocalizations {
       'categories': 'المجموعات',
       'favorites': 'المفضلة',
 
-      // شاشة الإضافة/التعديل
+
       'edit_note': 'تعديل الملاحظة',
       'title': 'العنوان',
       'enter_title': 'أدخل العنوان',
@@ -162,7 +163,7 @@ class AppLocalizations {
       'content_required': 'يرجى إدخال محتوى الملاحظة',
       'content_min_length': 'المحتوى يجب أن يكون 3 أحرف على الأقل',
 
-      // الإجراءات
+
       'cancel': 'إلغاء',
       'delete': 'حذف',
       'delete_title': 'حذف الملاحظة',
@@ -174,13 +175,13 @@ class AppLocalizations {
       'note_saved': 'تم حفظ الملاحظة بنجاح',
       'note_updated': 'تم تحديث الملاحظة بنجاح',
 
-      // التحديد
+
       'select_all': 'تحديد الكل',
       'selection_count': 'محدد',
       'delete_selected': 'حذف المحدد',
       'close_selection': 'إلغاء',
 
-      // الإعدادات
+
       'settings': 'الإعدادات',
       'theme': 'المظهر',
       'dark_mode': 'الوضع الداكن',
@@ -193,7 +194,7 @@ class AppLocalizations {
       'version': 'الإصدار',
       'features': 'المميزات',
 
-      // قائمة المميزات (6 ميزات بسيطة)
+
       'feature_1': 'احفظ أفكارك بسرعة',
       'feature_2': 'نظّمها في مجموعات ملونة',
       'feature_3': 'ضع نجمة على المهم',
@@ -201,16 +202,14 @@ class AppLocalizations {
       'feature_5': 'استخدمه ليلاً أو نهاراً',
       'feature_6': 'بالعربي أو الإنجليزي',
 
-      // القائمة
+
       'more': 'المزيد',
 
-      // التلميحات
       'tooltip_search': 'بحث',
       'tooltip_select_all': 'تحديد الكل',
       'tooltip_delete': 'حذف',
       'tooltip_cancel': 'إلغاء',
 
-      // المجموعات
       'no_categories': 'لا توجد مجموعات',
       'no_categories_desc': 'أنشئ أول مجموعة لك',
       'add_category': 'إضافة مجموعة',
@@ -232,22 +231,22 @@ class AppLocalizations {
       'no_notes_to_add': 'جميع الملاحظات موجودة في هذه المجموعة',
       'notes_added_to_category': 'تمت إضافة:',
       'note_removed_from_category': 'تمت إزالة الملاحظة من المجموعة',
+      'remove_from_category': 'إزالة من المجموعة',
       'no_notes_in_category': 'لا توجد ملاحظات في هذه المجموعة',
       'tap_to_add_notes': 'اضغط + لإضافة ملاحظات موجودة',
 
-      // الفئات الافتراضية
       'category_work': 'عمل',
       'category_study': 'دراسة',
       'category_personal': 'شخصي',
       'category_ideas': 'أفكار',
 
-      // المفضلة
+
       'no_favorites': 'لا توجد مفضلة',
       'no_favorites_desc': 'ضع نجمة على ملاحظاتك المهمة',
       'removed_from_favorites': 'تمت الإزالة من المفضلة',
       'added_to_favorites': 'تمت الإضافة للمفضلة',
 
-      // عام
+
       'add': 'إضافة',
       'error': 'خطأ',
       'press_again_to_exit': 'اضغط مرة أخرى للخروج',

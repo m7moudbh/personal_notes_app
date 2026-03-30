@@ -106,7 +106,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
         child: ListView(
           padding: const EdgeInsets.all(AppConstants.paddingMedium),
           children: [
-            // حقل العنوان
+
             TextFormField(
               controller: _titleController,
               decoration: InputDecoration(
@@ -136,7 +136,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
             ),
             const SizedBox(height: 16),
 
-            // حقل المحتوى
+
             TextFormField(
               controller: _contentController,
               decoration: InputDecoration(

@@ -32,7 +32,6 @@ class LocalStorageService {
     const textType = 'TEXT NOT NULL';
     const intType = 'INTEGER';
 
-    // جدول الملاحظات
     await db.execute('''
       CREATE TABLE notes (
         id $idType,
@@ -44,7 +43,6 @@ class LocalStorageService {
       )
     ''');
 
-    // جدول المجموعات
     await db.execute('''
       CREATE TABLE categories (
         id $idType,
@@ -157,7 +155,6 @@ class LocalStorageService {
     }
   }
 
-  // ==================== ملاحظات ====================
 
   Future<Note> createNote(Note note) async {
     final db = await instance.database;
@@ -249,7 +246,6 @@ class LocalStorageService {
     return result.map((json) => Note.fromMap(json)).toList();
   }
 
-  // ==================== مجموعات ====================
 
   Future<Category> createCategory(Category category) async {
     final db = await instance.database;

@@ -10,12 +10,12 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  google_fonts: ^6.1.0
+  google_fonts: ^8.0.0
   flutter_staggered_animations: ^1.1.1
   provider: ^6.1.1
   sqflite: ^2.3.0
   path_provider: ^2.1.1
-  path: ^1.8.3
+  path: ^1.9.1
   intl: ^0.20.2
   shared_preferences: ^2.2.2
   flutter_localizations:
@@ -26,24 +26,24 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  flutter_launcher_icons: ^0.13.1
-
+  flutter_launcher_icons: ^0.14.4
+  rename: ^3.1.0
 
 flutter_launcher_icons:
   android: true
   ios: false
   image_path: "assets/icon/app_icon.png"
 
-  # للأندرويد - أيقونة adaptive (اختياري)
+
   adaptive_icon_foreground: "assets/icon/app_icon.png"
-  adaptive_icon_background: "#2196F3"  # لون خلفية التطبيق
+  adaptive_icon_background: "#2196F3"
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/
-    - assets/icon/  # ← أضف هذا لاستخدام الأيقونة داخل التطبيق
+    - assets/icon/
 
   fonts:
     - family: Cairo
